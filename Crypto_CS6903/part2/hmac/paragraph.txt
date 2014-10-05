@@ -1,0 +1,5 @@
+This is the plaintext file that I've chosen to write. It really has nothing to do with the project but it serves its purpose well.
+The basic idea is that I need a file to encrypt and it has to be of substancial length but before i start writing "alksjdf;akvnfeilubtqk;rnfslfdkghier8t97463yu5hjr;kqlernfmliaure7rtyg4839eoirnflar78tyubah"
+I figure that I should give it a valient effort to write something meaningful.
+It's not that I'm really concerned about it but it seems to reason that I should have something that actually decodes to reasonable text and gives me something to compare against.
+At this point the message has served its purpose.
