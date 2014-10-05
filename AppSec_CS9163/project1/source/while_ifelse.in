@@ -1,0 +1,12 @@
+VAR ASGN X 0
+                        
+WHILE VAR X LT 10
+    PRINT VAR X
+    IF VAR X GT 5
+        PRINT "X>5"
+    ELSE
+        PRINT "X<=5"
+    ENDIF
+                                
+    VAR ADD X 1
+ENDWHILE

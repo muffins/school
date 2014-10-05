@@ -1,0 +1,15 @@
+{
+  "configurations": {
+    "rubygems.org": {
+      "repository_directory": "/home/panhchan/workspace/Assignment3/gemsontuf/client",
+      "repository_mirrors" : {
+        "mirror1": {
+          "url_prefix": "http://localhost:8000",
+          "metadata_path": "metadata",
+          "targets_path": "targets",
+          "confined_target_dirs": [""]
+        }
+      }
+    }
+  }
+} 

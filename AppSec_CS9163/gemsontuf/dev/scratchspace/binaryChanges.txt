@@ -1,0 +1,30 @@
+changes that need to be made 
+
+add global 
+int length;
+and 
+extern int length;
+
+
+the following code needs to be added 
+this changes the PyObject* into a char*
+it also saves the length which is required by ruby 
+
+args = PyTuple_New( 1 );
+arg0 = http_resp;
+PyTuple_SetItem(args, 0, arg0);
+    
+int i = PyString_Size( http_resp );
+
+char* resp;
+    
+if ( !PyArg_ParseTuple( args, "s#", &resp, &i) ) {
+	PyErr_Print();
+	return NULL;
+}
+length = i;
+
+
+In the cRuby code to get a binary string to Ruby we need to change
+any rb_str_new2( char ) to
+rb_str_new( char, length );

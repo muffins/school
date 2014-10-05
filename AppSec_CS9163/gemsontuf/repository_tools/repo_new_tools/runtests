@@ -1,0 +1,10 @@
+#! /bin/bash
+
+echo "Results" > results.txt
+
+for i in `seq 2 5`; do
+	let j=12-$i
+	echo -e -n "BIN=$i \t SIZE=$j \t " >> results.txt
+	make BIN=$i SIZE=$j; make BIN=$i SIZE=$j update
+	du -h /tmp/gemsontuf/repository/metadata | tail -n 1 >> results.txt
+done

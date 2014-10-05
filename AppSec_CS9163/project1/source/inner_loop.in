@@ -1,0 +1,26 @@
+VAR ASGN IN1 0
+WHILE VAR IN1 LT 2
+    VAR ASGN IN2 0
+    PRINT VAR IN1
+    WHILE VAR IN2 LT 2
+        VAR ASGN IN3 0
+        PRINT VAR IN2
+        WHILE VAR IN3 LT 2
+            VAR ASGN IN4 0
+            PRINT VAR IN3
+            WHILE VAR IN4 LT 2
+                VAR ASGN IN5 0
+                PRINT VAR IN4
+                WHILE VAR IN5 LT 2
+                    PRINT VAR IN5
+                    VAR ADD IN5 1
+                ENDWHILE
+                VAR ADD IN4 1
+            ENDWHILE
+            VAR ADD IN3 1
+        ENDWHILE
+        VAR ADD IN2 1
+    ENDWHILE
+    VAR ADD IN1 1
+ENDWHILE
+

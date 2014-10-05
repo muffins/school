@@ -1,0 +1,169 @@
+{
+ "signatures": [
+  {
+   "keyid": "f4d07459434d9274a067712d22aeabc972b01e71fcd368763530c548d254fe12", 
+   "method": "PyCrypto-PKCS#1 PSS", 
+   "sig": "e97bdcf9bec9623a0aaeceb509264cc50ea4bc0d8684da33db81ad034347b0607e742c6e9a562d4a13d72d46c22ddb5d98b296f12c93cdad05fd176d1f825f54a1d6462dd4e59ccec664613af2dc918d8e9ca5f404ad8c0cded31e95d778ee12da4776ee4aa5f1440c15565a4cb9482d227a4471fbb1a6529fd58efeabf15e8b65a52d8fe53661ccbdb3f191f419689c5d511cff9a8657ec30c67249cfa8049e5e5fd2b68fbe726fad5564fa47092355dd13c9fd73c994c9b86c25b69d1049b9a6b4141700bd663427c5ac6fd3bf4f0d01f95d6a01daf3273d0d38feea51e0040375b1d89ac60fc74ec98ca0daaeb642d87069b74b6947dfd1c5fe9a8468db21"
+  }, 
+  {
+   "keyid": "240be6d5cd7da8eef387de56c2e15ab47c9cdd4c65e2a1493e8082634513fae6", 
+   "method": "PyCrypto-PKCS#1 PSS", 
+   "sig": "0a08772bfbbf395c89b4906aed19386c9277090d9ac1b03922a3df67e941dad67e203858f0e04489ae5b2c158e8a71334e3685510a8574b490aee087d759369276ec03b00eeef4f3c6eb864e7f840367368a208f672cb447b29467d798afae073a737cb63f1878ea3ed4e3897ca95cf13a5fc1998d9c699e22abb7cdb557fc7b4b87811040738ceb8410a9c4f1555afcf91cdf74779758442abdf95a2992879877bd6f0bea93188105b70317660e657c5b4ffa1682f8ae4eab57c1dc8af1249cebf24947b97d837e11cc08f39493527e7b7a8de233683693db432d766b0c558965682139d80a6f8bec48139076b28d391582b429b99add60edddcd8265e463ac"
+  }
+ ], 
+ "signed": {
+  "_type": "Targets", 
+  "delegations": {
+   "keys": {}, 
+   "roles": []
+  }, 
+  "expires": "2014-02-24 15:17:45 UTC", 
+  "targets": {
+   "gems/arbitrary-0.0.6.gem": {
+    "hashes": {
+     "sha256": "c5d0316c2e4a78ff45171bb7c30bc7fa8f418a6686eb62b99d74e3bc1405c3d7"
+    }, 
+    "length": 6144
+   }, 
+   "gems/important-0.0.6.gem": {
+    "hashes": {
+     "sha256": "8bc39e2b9428d7781f10e6aa0485a77d6bfb476a66ef3c2aacf32ab6a131d563"
+    }, 
+    "length": 6144
+   }, 
+   "gems/important-0.0.7.gem": {
+    "hashes": {
+     "sha256": "64cbaca523482975cecb6779f943ca0853f131360ad28d1f963f070af9e2db8d"
+    }, 
+    "length": 6144
+   }, 
+   "gems/important-0.0.8.gem": {
+    "hashes": {
+     "sha256": "edf7c94b4babcb0044a5ea73595196b7172047649f662e287fef045e9a901889"
+    }, 
+    "length": 6144
+   }, 
+   "gems/nekgem-0.0.1.gem": {
+    "hashes": {
+     "sha256": "abdea755436db52fe80d1825206c26f1a217324c7666b8d1db9102d7d60c06e4"
+    }, 
+    "length": 4096
+   }, 
+   "gems/nekgem-0.0.2.gem": {
+    "hashes": {
+     "sha256": "bcfc11f6d3e8b11ccd4b36cf6200d19e5d5fca18d8a634c68cd86e1bc086173f"
+    }, 
+    "length": 3072
+   }, 
+   "gems/nekgem-0.0.3.gem": {
+    "hashes": {
+     "sha256": "6a32f7aff2f099395e847f769f90ae12dc6aee5fd9979104003f30a2040e65a2"
+    }, 
+    "length": 6144
+   }, 
+   "gems/nekgem-0.0.4.gem": {
+    "hashes": {
+     "sha256": "c15000515d02da8ffa4021aa973841ef38a1178627c65f05e4a99183fb26677b"
+    }, 
+    "length": 114688
+   }, 
+   "gems/nekgem-0.0.5.gem": {
+    "hashes": {
+     "sha256": "03675657aeec5375d2750ed7f6ca6c3d766c70dd3b0c747b138552a1d396e548"
+    }, 
+    "length": 4096
+   }, 
+   "gems/nekgem-0.0.6.gem": {
+    "hashes": {
+     "sha256": "f1c0531ea0d8074af00de5ca7651571385429d1c165df0c035cf151b299aa198"
+    }, 
+    "length": 4096
+   }, 
+   "latest_specs.4.8": {
+    "hashes": {
+     "sha256": "a36fb9c87423780206a772c2eabb87c61099a5c3161231c79fcb2712514bd32b"
+    }, 
+    "length": 134
+   }, 
+   "latest_specs.4.8.gz": {
+    "hashes": {
+     "sha256": "beb16721d8bb6194af28d6f535792d72517183dca8b4c829e02ed74444b29ddd"
+    }, 
+    "length": 116
+   }, 
+   "prerelease_specs.4.8": {
+    "hashes": {
+     "sha256": "9140c85f1b09e03f67249bac40beb16b5b512b8915f702f44937b9011ff7205d"
+    }, 
+    "length": 4
+   }, 
+   "prerelease_specs.4.8.gz": {
+    "hashes": {
+     "sha256": "fac8642218e84b3ebdc43744a7cdc7f4b99d85e903f9d351e626ce8dbfce4fc7"
+    }, 
+    "length": 24
+   }, 
+   "quick/Marshal.4.8/arbitrary-0.0.6.gemspec.rz": {
+    "hashes": {
+     "sha256": "8363e0f3070f4419d3325e408ac8a7d5d5d097bc9a90c8f3031d6cfbde0b7cf4"
+    }, 
+    "length": 249
+   }, 
+   "quick/Marshal.4.8/important-0.0.6.gemspec.rz": {
+    "hashes": {
+     "sha256": "4749fc138e93212bbca4adedd617d5e533d1f9283c04311c99fe24e307b41719"
+    }, 
+    "length": 246
+   }, 
+   "quick/Marshal.4.8/important-0.0.7.gemspec.rz": {
+    "hashes": {
+     "sha256": "d8242f922e3e2465689ced3da4e10ee0d82d03ce64edf24b8353ee602d1887fc"
+    }, 
+    "length": 246
+   }, 
+   "quick/Marshal.4.8/important-0.0.8.gemspec.rz": {
+    "hashes": {
+     "sha256": "f764c5bf75e2f34992b9d402ad7ca7cff97a8bef3d7a29791e4cf69ab5f9f1ed"
+    }, 
+    "length": 246
+   }, 
+   "quick/Marshal.4.8/nekgem-0.0.1.gemspec.rz": {
+    "hashes": {
+     "sha256": "daf1dcd53c91ebaf090630594dd000982364ac6dc76407339d1ef8a4d11b2036"
+    }, 
+    "length": 241
+   }, 
+   "quick/Marshal.4.8/nekgem-0.0.2.gemspec.rz": {
+    "hashes": {
+     "sha256": "8aba24981db08125539b3c3559f892615482627ad144d58869d1da974200026d"
+    }, 
+    "length": 244
+   }, 
+   "quick/Marshal.4.8/nekgem-0.0.3.gemspec.rz": {
+    "hashes": {
+     "sha256": "2d306900ce907632c3900975a018faf4681bdd58ac343c80c8c2921ccccd5920"
+    }, 
+    "length": 244
+   }, 
+   "quick/Marshal.4.8/nekgem-0.0.4.gemspec.rz": {
+    "hashes": {
+     "sha256": "b5959f4dda0dea64f8be43509d4b1800c02a4e0e1ed0845ea3af5f49311594ed"
+    }, 
+    "length": 241
+   }, 
+   "specs.4.8": {
+    "hashes": {
+     "sha256": "2d9e3f327e7e4feb58f7e52820e5d1161e6730050e275810a0873a5a4b42cc15"
+    }, 
+    "length": 234
+   }, 
+   "specs.4.8.gz": {
+    "hashes": {
+     "sha256": "3207b32873b60e459e31a34444934a53f3ed77e2fee60051a674496e2a14f29d"
+    }, 
+    "length": 142
+   }
+  }, 
+  "version": 1
+ }
+}

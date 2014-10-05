@@ -1,0 +1,277 @@
+[2013-11-26 18:27:15,562 UTC] [tuf.interposition] [DEBUG][debug:28@utility.py] Created temporary directory at /tmp/tmpZibtbe
+[2013-11-26 18:27:15,562 UTC] [tuf.util] [DEBUG][load_json_file:575@util.py] open(/tmp/.gemtuf/client/metadata/current/root.txt)
+[2013-11-26 18:27:15,564 UTC] [tuf.util] [DEBUG][load_json_file:575@util.py] open(/tmp/.gemtuf/client/metadata/current/targets.txt)
+[2013-11-26 18:27:15,565 UTC] [tuf.client.updater] [DEBUG][_import_delegations:484@updater.py] Adding roles delegated from 'targets'.
+[2013-11-26 18:27:15,565 UTC] [tuf.util] [DEBUG][load_json_file:575@util.py] open(/tmp/.gemtuf/client/metadata/current/release.txt)
+[2013-11-26 18:27:15,565 UTC] [tuf.util] [DEBUG][load_json_file:575@util.py] open(/tmp/.gemtuf/client/metadata/current/timestamp.txt)
+[2013-11-26 18:27:15,565 UTC] [tuf.util] [DEBUG][load_json_file:575@util.py] open(/tmp/.gemtuf/client/metadata/previous/root.txt)
+[2013-11-26 18:27:15,566 UTC] [tuf.util] [DEBUG][load_json_file:575@util.py] open(/tmp/.gemtuf/client/metadata/previous/timestamp.txt)
+[2013-11-26 18:27:15,566 UTC] [tuf.interposition] [INFO][info:38@utility.py] Updater added for Configuration(netloc=localhost:8080).
+[2013-11-26 18:27:15,566 UTC] [tuf.interposition] [INFO][info:38@utility.py] Found updater for hostname=localhost
+[2013-11-26 18:27:15,566 UTC] [tuf.interposition] [INFO][info:38@utility.py] Interposing for http://localhost:8080/latest_specs.4.8.gz
+[2013-11-26 18:27:15,569 UTC] [tuf.download] [INFO][_download_file:726@download.py] Downloading: http://localhost:9294/metadata/timestamp.txt
+[2013-11-26 18:27:15,577 UTC] [tuf.download] [WARNING][_check_content_length:589@download.py] reported_length (1750) < required_length (2048)
+[2013-11-26 18:27:15,577 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:27:15,578 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:27:15,578 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:501@download.py] Downloaded 1750/2048 bytes.
+[2013-11-26 18:27:15,578 UTC] [tuf.download] [WARNING][_check_downloaded_length:656@download.py] Downloaded 1750 bytes, but expected 2048 bytes. There is a difference of 298 bytes!
+[2013-11-26 18:27:15,578 UTC] [tuf.client.updater] [DEBUG][__get_file:1003@updater.py] Not decompressing http://localhost:9294/metadata/timestamp.txt
+[2013-11-26 18:27:15,578 UTC] [tuf.client.updater] [DEBUG][__soft_check_compressed_file_length:703@updater.py] file length (1750) <= trusted length (2048)
+[2013-11-26 18:27:15,582 UTC] [tuf.client.updater] [DEBUG][_update_metadata:1158@updater.py] Updated u'/tmp/.gemtuf/client/metadata/current/timestamp.txt'.
+[2013-11-26 18:27:15,582 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'release' referenced in 'timestamp'.  'release' may be updated.
+[2013-11-26 18:27:15,582 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'release.txt' is available at 'release.txt.gz'.
+[2013-11-26 18:27:15,582 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'root' referenced in 'release'.  'root' may be updated.
+[2013-11-26 18:27:15,582 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'targets' referenced in 'release'.  'targets' may be updated.
+[2013-11-26 18:27:15,582 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'targets.txt' is available at 'targets.txt.gz'.
+[2013-11-26 18:27:15,585 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'targets' referenced in 'release'.  'targets' may be updated.
+[2013-11-26 18:27:15,585 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'targets.txt' is available at 'targets.txt.gz'.
+[2013-11-26 18:27:15,585 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2217@updater.py] Asking role 'targets' about target 'latest_specs.4.8.gz'
+[2013-11-26 18:27:15,585 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,585 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,585 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,585 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,585 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,585 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,585 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,585 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,585 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,585 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,585 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,585 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,585 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,586 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,586 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,586 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,586 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,586 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,586 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2220@updater.py] Found target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,586 UTC] [tuf.client.updater] [DEBUG][_preorder_depth_first_walk:2177@updater.py] Found target in current role 'targets'
+[2013-11-26 18:27:15,586 UTC] [tuf.download] [INFO][_download_file:726@download.py] Downloading: http://localhost:9294/targets/latest_specs.4.8.gz
+[2013-11-26 18:27:15,589 UTC] [tuf.download] [DEBUG][_check_content_length:595@download.py] reported_length (116) == required_length (116)
+[2013-11-26 18:27:15,589 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:27:15,589 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:27:15,589 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:501@download.py] Downloaded 116/116 bytes.
+[2013-11-26 18:27:15,589 UTC] [tuf.download] [DEBUG][_check_downloaded_length:638@download.py] total_downloaded == required_length == 116
+[2013-11-26 18:27:15,589 UTC] [tuf.client.updater] [DEBUG][__get_file:1003@updater.py] Not decompressing http://localhost:9294/targets/latest_specs.4.8.gz
+[2013-11-26 18:27:15,589 UTC] [tuf.client.updater] [DEBUG][__hard_check_compressed_file_length:664@updater.py] file length (116) == trusted length (116)
+[2013-11-26 18:27:15,589 UTC] [tuf.client.updater] [INFO][__check_hashes:624@updater.py] The file's sha256 hash is correct: beb16721d8bb6194af28d6f535792d72517183dca8b4c829e02ed74444b29ddd
+[2013-11-26 18:27:15,589 UTC] [tuf.interposition] [INFO][info:38@utility.py] Found updater for hostname=localhost
+[2013-11-26 18:27:15,590 UTC] [tuf.interposition] [INFO][info:38@utility.py] Interposing for http://localhost:8080/latest_specs.4.8.gz
+[2013-11-26 18:27:15,590 UTC] [tuf.download] [INFO][_download_file:726@download.py] Downloading: http://localhost:9294/metadata/timestamp.txt
+[2013-11-26 18:27:15,593 UTC] [tuf.download] [WARNING][_check_content_length:589@download.py] reported_length (1750) < required_length (2048)
+[2013-11-26 18:27:15,593 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:27:15,594 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:27:15,594 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:501@download.py] Downloaded 1750/2048 bytes.
+[2013-11-26 18:27:15,594 UTC] [tuf.download] [WARNING][_check_downloaded_length:656@download.py] Downloaded 1750 bytes, but expected 2048 bytes. There is a difference of 298 bytes!
+[2013-11-26 18:27:15,594 UTC] [tuf.client.updater] [DEBUG][__get_file:1003@updater.py] Not decompressing http://localhost:9294/metadata/timestamp.txt
+[2013-11-26 18:27:15,594 UTC] [tuf.client.updater] [DEBUG][__soft_check_compressed_file_length:703@updater.py] file length (1750) <= trusted length (2048)
+[2013-11-26 18:27:15,597 UTC] [tuf.client.updater] [DEBUG][_update_metadata:1158@updater.py] Updated u'/tmp/.gemtuf/client/metadata/current/timestamp.txt'.
+[2013-11-26 18:27:15,597 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'release' referenced in 'timestamp'.  'release' may be updated.
+[2013-11-26 18:27:15,598 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'release.txt' is available at 'release.txt.gz'.
+[2013-11-26 18:27:15,598 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'root' referenced in 'release'.  'root' may be updated.
+[2013-11-26 18:27:15,598 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'targets' referenced in 'release'.  'targets' may be updated.
+[2013-11-26 18:27:15,598 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'targets.txt' is available at 'targets.txt.gz'.
+[2013-11-26 18:27:15,598 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'targets' referenced in 'release'.  'targets' may be updated.
+[2013-11-26 18:27:15,598 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'targets.txt' is available at 'targets.txt.gz'.
+[2013-11-26 18:27:15,598 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2217@updater.py] Asking role 'targets' about target 'latest_specs.4.8.gz'
+[2013-11-26 18:27:15,598 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,598 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,598 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,598 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,598 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,598 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,598 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,598 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,599 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,599 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,599 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,599 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,599 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,599 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,599 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,599 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,599 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,599 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,599 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2220@updater.py] Found target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:15,599 UTC] [tuf.client.updater] [DEBUG][_preorder_depth_first_walk:2177@updater.py] Found target in current role 'targets'
+[2013-11-26 18:27:59,951 UTC] [tuf.interposition] [DEBUG][debug:28@utility.py] Created temporary directory at /tmp/tmpgKtFih
+[2013-11-26 18:27:59,951 UTC] [tuf.util] [DEBUG][load_json_file:575@util.py] open(/tmp/.gemtuf/client/metadata/current/root.txt)
+[2013-11-26 18:27:59,953 UTC] [tuf.util] [DEBUG][load_json_file:575@util.py] open(/tmp/.gemtuf/client/metadata/current/targets.txt)
+[2013-11-26 18:27:59,954 UTC] [tuf.client.updater] [DEBUG][_import_delegations:484@updater.py] Adding roles delegated from 'targets'.
+[2013-11-26 18:27:59,954 UTC] [tuf.util] [DEBUG][load_json_file:575@util.py] open(/tmp/.gemtuf/client/metadata/current/release.txt)
+[2013-11-26 18:27:59,954 UTC] [tuf.util] [DEBUG][load_json_file:575@util.py] open(/tmp/.gemtuf/client/metadata/current/timestamp.txt)
+[2013-11-26 18:27:59,954 UTC] [tuf.util] [DEBUG][load_json_file:575@util.py] open(/tmp/.gemtuf/client/metadata/previous/root.txt)
+[2013-11-26 18:27:59,955 UTC] [tuf.util] [DEBUG][load_json_file:575@util.py] open(/tmp/.gemtuf/client/metadata/previous/timestamp.txt)
+[2013-11-26 18:27:59,955 UTC] [tuf.interposition] [INFO][info:38@utility.py] Updater added for Configuration(netloc=localhost:8080).
+[2013-11-26 18:27:59,955 UTC] [tuf.interposition] [INFO][info:38@utility.py] Found updater for hostname=localhost
+[2013-11-26 18:27:59,955 UTC] [tuf.interposition] [INFO][info:38@utility.py] Interposing for http://localhost:8080/latest_specs.4.8.gz
+[2013-11-26 18:27:59,958 UTC] [tuf.download] [INFO][_download_file:726@download.py] Downloading: http://localhost:9294/metadata/timestamp.txt
+[2013-11-26 18:27:59,966 UTC] [tuf.download] [WARNING][_check_content_length:589@download.py] reported_length (1750) < required_length (2048)
+[2013-11-26 18:27:59,966 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:27:59,966 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:27:59,966 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:501@download.py] Downloaded 1750/2048 bytes.
+[2013-11-26 18:27:59,966 UTC] [tuf.download] [WARNING][_check_downloaded_length:656@download.py] Downloaded 1750 bytes, but expected 2048 bytes. There is a difference of 298 bytes!
+[2013-11-26 18:27:59,966 UTC] [tuf.client.updater] [DEBUG][__get_file:1003@updater.py] Not decompressing http://localhost:9294/metadata/timestamp.txt
+[2013-11-26 18:27:59,966 UTC] [tuf.client.updater] [DEBUG][__soft_check_compressed_file_length:703@updater.py] file length (1750) <= trusted length (2048)
+[2013-11-26 18:27:59,970 UTC] [tuf.client.updater] [DEBUG][_update_metadata:1158@updater.py] Updated u'/tmp/.gemtuf/client/metadata/current/timestamp.txt'.
+[2013-11-26 18:27:59,970 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'release' referenced in 'timestamp'.  'release' may be updated.
+[2013-11-26 18:27:59,970 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'release.txt' is available at 'release.txt.gz'.
+[2013-11-26 18:27:59,971 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'root' referenced in 'release'.  'root' may be updated.
+[2013-11-26 18:27:59,971 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'targets' referenced in 'release'.  'targets' may be updated.
+[2013-11-26 18:27:59,971 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'targets.txt' is available at 'targets.txt.gz'.
+[2013-11-26 18:27:59,973 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'targets' referenced in 'release'.  'targets' may be updated.
+[2013-11-26 18:27:59,973 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'targets.txt' is available at 'targets.txt.gz'.
+[2013-11-26 18:27:59,973 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2217@updater.py] Asking role 'targets' about target 'latest_specs.4.8.gz'
+[2013-11-26 18:27:59,973 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,973 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,973 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,974 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,974 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,974 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,974 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,974 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,974 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,974 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,974 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,974 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,974 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,974 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,974 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,974 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,974 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,974 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,974 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2220@updater.py] Found target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,974 UTC] [tuf.client.updater] [DEBUG][_preorder_depth_first_walk:2177@updater.py] Found target in current role 'targets'
+[2013-11-26 18:27:59,974 UTC] [tuf.download] [INFO][_download_file:726@download.py] Downloading: http://localhost:9294/targets/latest_specs.4.8.gz
+[2013-11-26 18:27:59,977 UTC] [tuf.download] [DEBUG][_check_content_length:595@download.py] reported_length (116) == required_length (116)
+[2013-11-26 18:27:59,977 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:27:59,977 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:27:59,978 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:501@download.py] Downloaded 116/116 bytes.
+[2013-11-26 18:27:59,978 UTC] [tuf.download] [DEBUG][_check_downloaded_length:638@download.py] total_downloaded == required_length == 116
+[2013-11-26 18:27:59,978 UTC] [tuf.client.updater] [DEBUG][__get_file:1003@updater.py] Not decompressing http://localhost:9294/targets/latest_specs.4.8.gz
+[2013-11-26 18:27:59,978 UTC] [tuf.client.updater] [DEBUG][__hard_check_compressed_file_length:664@updater.py] file length (116) == trusted length (116)
+[2013-11-26 18:27:59,978 UTC] [tuf.client.updater] [INFO][__check_hashes:624@updater.py] The file's sha256 hash is correct: beb16721d8bb6194af28d6f535792d72517183dca8b4c829e02ed74444b29ddd
+[2013-11-26 18:27:59,978 UTC] [tuf.interposition] [INFO][info:38@utility.py] Found updater for hostname=localhost
+[2013-11-26 18:27:59,978 UTC] [tuf.interposition] [INFO][info:38@utility.py] Interposing for http://localhost:8080/latest_specs.4.8.gz
+[2013-11-26 18:27:59,978 UTC] [tuf.download] [INFO][_download_file:726@download.py] Downloading: http://localhost:9294/metadata/timestamp.txt
+[2013-11-26 18:27:59,981 UTC] [tuf.download] [WARNING][_check_content_length:589@download.py] reported_length (1750) < required_length (2048)
+[2013-11-26 18:27:59,981 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:27:59,981 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:27:59,981 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:501@download.py] Downloaded 1750/2048 bytes.
+[2013-11-26 18:27:59,981 UTC] [tuf.download] [WARNING][_check_downloaded_length:656@download.py] Downloaded 1750 bytes, but expected 2048 bytes. There is a difference of 298 bytes!
+[2013-11-26 18:27:59,981 UTC] [tuf.client.updater] [DEBUG][__get_file:1003@updater.py] Not decompressing http://localhost:9294/metadata/timestamp.txt
+[2013-11-26 18:27:59,981 UTC] [tuf.client.updater] [DEBUG][__soft_check_compressed_file_length:703@updater.py] file length (1750) <= trusted length (2048)
+[2013-11-26 18:27:59,984 UTC] [tuf.client.updater] [DEBUG][_update_metadata:1158@updater.py] Updated u'/tmp/.gemtuf/client/metadata/current/timestamp.txt'.
+[2013-11-26 18:27:59,984 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'release' referenced in 'timestamp'.  'release' may be updated.
+[2013-11-26 18:27:59,984 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'release.txt' is available at 'release.txt.gz'.
+[2013-11-26 18:27:59,984 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'root' referenced in 'release'.  'root' may be updated.
+[2013-11-26 18:27:59,984 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'targets' referenced in 'release'.  'targets' may be updated.
+[2013-11-26 18:27:59,984 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'targets.txt' is available at 'targets.txt.gz'.
+[2013-11-26 18:27:59,985 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'targets' referenced in 'release'.  'targets' may be updated.
+[2013-11-26 18:27:59,985 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'targets.txt' is available at 'targets.txt.gz'.
+[2013-11-26 18:27:59,985 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2217@updater.py] Asking role 'targets' about target 'latest_specs.4.8.gz'
+[2013-11-26 18:27:59,985 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,985 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,985 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,985 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,985 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,985 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,989 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,990 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,990 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,990 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,990 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,990 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,990 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,990 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,990 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,990 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,990 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,990 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,990 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2220@updater.py] Found target latest_specs.4.8.gz in role targets
+[2013-11-26 18:27:59,990 UTC] [tuf.client.updater] [DEBUG][_preorder_depth_first_walk:2177@updater.py] Found target in current role 'targets'
+[2013-11-26 18:27:59,992 UTC] [tuf.interposition] [INFO][info:38@utility.py] Found updater for hostname=localhost
+[2013-11-26 18:27:59,993 UTC] [tuf.interposition] [INFO][info:38@utility.py] Interposing for http://localhost:8080/specs.4.8.gz
+[2013-11-26 18:27:59,993 UTC] [tuf.download] [INFO][_download_file:726@download.py] Downloading: http://localhost:9294/metadata/timestamp.txt
+[2013-11-26 18:27:59,999 UTC] [tuf.download] [WARNING][_check_content_length:589@download.py] reported_length (1750) < required_length (2048)
+[2013-11-26 18:27:59,999 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:27:59,999 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:27:59,999 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:501@download.py] Downloaded 1750/2048 bytes.
+[2013-11-26 18:27:59,999 UTC] [tuf.download] [WARNING][_check_downloaded_length:656@download.py] Downloaded 1750 bytes, but expected 2048 bytes. There is a difference of 298 bytes!
+[2013-11-26 18:27:59,999 UTC] [tuf.client.updater] [DEBUG][__get_file:1003@updater.py] Not decompressing http://localhost:9294/metadata/timestamp.txt
+[2013-11-26 18:27:59,999 UTC] [tuf.client.updater] [DEBUG][__soft_check_compressed_file_length:703@updater.py] file length (1750) <= trusted length (2048)
+[2013-11-26 18:28:00,003 UTC] [tuf.client.updater] [DEBUG][_update_metadata:1158@updater.py] Updated u'/tmp/.gemtuf/client/metadata/current/timestamp.txt'.
+[2013-11-26 18:28:00,004 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'release' referenced in 'timestamp'.  'release' may be updated.
+[2013-11-26 18:28:00,004 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'release.txt' is available at 'release.txt.gz'.
+[2013-11-26 18:28:00,004 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'root' referenced in 'release'.  'root' may be updated.
+[2013-11-26 18:28:00,004 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'targets' referenced in 'release'.  'targets' may be updated.
+[2013-11-26 18:28:00,004 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'targets.txt' is available at 'targets.txt.gz'.
+[2013-11-26 18:28:00,004 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'targets' referenced in 'release'.  'targets' may be updated.
+[2013-11-26 18:28:00,004 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'targets.txt' is available at 'targets.txt.gz'.
+[2013-11-26 18:28:00,004 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2217@updater.py] Asking role 'targets' about target 'specs.4.8.gz'
+[2013-11-26 18:28:00,004 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,004 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,004 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,004 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,005 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,005 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,005 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,005 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,005 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,005 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,005 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,005 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,005 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,005 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,005 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,005 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,005 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,005 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2220@updater.py] Found target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,005 UTC] [tuf.client.updater] [DEBUG][_preorder_depth_first_walk:2177@updater.py] Found target in current role 'targets'
+[2013-11-26 18:28:00,005 UTC] [tuf.download] [INFO][_download_file:726@download.py] Downloading: http://localhost:9294/targets/specs.4.8.gz
+[2013-11-26 18:28:00,008 UTC] [tuf.download] [DEBUG][_check_content_length:595@download.py] reported_length (142) == required_length (142)
+[2013-11-26 18:28:00,008 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:28:00,008 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:28:00,008 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:501@download.py] Downloaded 142/142 bytes.
+[2013-11-26 18:28:00,008 UTC] [tuf.download] [DEBUG][_check_downloaded_length:638@download.py] total_downloaded == required_length == 142
+[2013-11-26 18:28:00,009 UTC] [tuf.client.updater] [DEBUG][__get_file:1003@updater.py] Not decompressing http://localhost:9294/targets/specs.4.8.gz
+[2013-11-26 18:28:00,009 UTC] [tuf.client.updater] [DEBUG][__hard_check_compressed_file_length:664@updater.py] file length (142) == trusted length (142)
+[2013-11-26 18:28:00,009 UTC] [tuf.client.updater] [INFO][__check_hashes:624@updater.py] The file's sha256 hash is correct: 3207b32873b60e459e31a34444934a53f3ed77e2fee60051a674496e2a14f29d
+[2013-11-26 18:28:00,009 UTC] [tuf.interposition] [INFO][info:38@utility.py] Found updater for hostname=localhost
+[2013-11-26 18:28:00,009 UTC] [tuf.interposition] [INFO][info:38@utility.py] Interposing for http://localhost:8080/specs.4.8.gz
+[2013-11-26 18:28:00,009 UTC] [tuf.download] [INFO][_download_file:726@download.py] Downloading: http://localhost:9294/metadata/timestamp.txt
+[2013-11-26 18:28:00,012 UTC] [tuf.download] [WARNING][_check_content_length:589@download.py] reported_length (1750) < required_length (2048)
+[2013-11-26 18:28:00,012 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:28:00,012 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:494@download.py] Reading next chunk...
+[2013-11-26 18:28:00,012 UTC] [tuf.download] [DEBUG][_download_fixed_amount_of_data:501@download.py] Downloaded 1750/2048 bytes.
+[2013-11-26 18:28:00,012 UTC] [tuf.download] [WARNING][_check_downloaded_length:656@download.py] Downloaded 1750 bytes, but expected 2048 bytes. There is a difference of 298 bytes!
+[2013-11-26 18:28:00,012 UTC] [tuf.client.updater] [DEBUG][__get_file:1003@updater.py] Not decompressing http://localhost:9294/metadata/timestamp.txt
+[2013-11-26 18:28:00,012 UTC] [tuf.client.updater] [DEBUG][__soft_check_compressed_file_length:703@updater.py] file length (1750) <= trusted length (2048)
+[2013-11-26 18:28:00,015 UTC] [tuf.client.updater] [DEBUG][_update_metadata:1158@updater.py] Updated u'/tmp/.gemtuf/client/metadata/current/timestamp.txt'.
+[2013-11-26 18:28:00,016 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'release' referenced in 'timestamp'.  'release' may be updated.
+[2013-11-26 18:28:00,016 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'release.txt' is available at 'release.txt.gz'.
+[2013-11-26 18:28:00,016 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'root' referenced in 'release'.  'root' may be updated.
+[2013-11-26 18:28:00,016 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'targets' referenced in 'release'.  'targets' may be updated.
+[2013-11-26 18:28:00,016 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'targets.txt' is available at 'targets.txt.gz'.
+[2013-11-26 18:28:00,016 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1237@updater.py] 'targets' referenced in 'release'.  'targets' may be updated.
+[2013-11-26 18:28:00,016 UTC] [tuf.client.updater] [DEBUG][_update_metadata_if_changed:1272@updater.py] Compressed version of 'targets.txt' is available at 'targets.txt.gz'.
+[2013-11-26 18:28:00,016 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2217@updater.py] Asking role 'targets' about target 'specs.4.8.gz'
+[2013-11-26 18:28:00,016 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,016 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,016 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,016 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,016 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,016 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,017 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,017 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,017 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,017 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,017 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,017 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,017 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,017 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,017 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,017 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,017 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2224@updater.py] No target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,017 UTC] [tuf.client.updater] [DEBUG][_get_target_from_targets_role:2220@updater.py] Found target specs.4.8.gz in role targets
+[2013-11-26 18:28:00,017 UTC] [tuf.client.updater] [DEBUG][_preorder_depth_first_walk:2177@updater.py] Found target in current role 'targets'

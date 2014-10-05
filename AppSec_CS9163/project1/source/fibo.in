@@ -1,0 +1,15 @@
+var asgn fibo 10
+
+var asgn tmp  0
+var asgn seed 1
+var asgn fib  0
+var asgn cnt  0
+
+print var fib
+while var cnt lt var fibo
+    var asgn tmp fib
+    var add fib seed
+    var asgn seed tmp
+    var add cnt 1
+    print var fib
+endwhile

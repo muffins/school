@@ -1,0 +1,44 @@
+Purpose of this document is to keep track of ideas on where and how in Gems to let TUF take over.
+
+**FROM Nov. 8 Email: Pan**
+So guys, this is what I'm seeing so far:
+
+The HTTP/remote calling stuff really starts at fetch_path in lib/rubygems/remote_fetcher.rb.
+	258    data = send "fetch_#{uri.scheme}", uri, mtime, head
+
+	The above line ^ is part of fetch_path and it calls fetch_http or fetch_https (which are the same thing) and returns the http "response" into data, which is expected to be a gunzip file and unpacked a few lines down in the same fetch_path function.
+
+Inside of fetch_http of the same remote_fetcher.rb, the function does different things based on the "response" it receives.
+	Response is initialized as such:
+	223    response   = request uri, fetch_type, last_modified
+
+	Where request is an object as defined by lib/rubygems/request.rb.
+	This seems to be the line that finally causes the actual downloading. It is within the fetch function of request.rb:
+	137    response = connection.request(request) do |incomplete_response|
+
+	connection is an object created by the fetch function on a previous line:
+	122    connection = connection_for @uri
+
+	connection_for is another function also within request.rb.
+	And it goes on from there....
+
+Not as simple as I would have hoped, I'm not sure where we can redirect gems to TUF without accidentally cutting off some necessary function.
+If anything, we could possibly cut it off right at the first thing I mentioned: "data = send "fetch_#{uri.scheme}", uri, mtime, head"
+Possible problems here include messing up how gems handles redirects and other HTTP responses.
+
+**FROM Nov. 9 Email: Pan**
+In remote_fetcher.rb, the fetch_http function is where the real HTTP is starting.
+
+Possible idea: Override the normal fetch_http with a simple one that will call whatever function you guys are sticking in the C bridge (which will call TUF).
+Basically this:
+	258    data = send "fetch_#{uri.scheme}", uri, mtime, head
+
+	That ^ from fetch_path (which is what gets the files) will call fetch_http.
+	fetch_http will be overridden to call your C bridge.
+	C bridge will call TUF.
+	TUF returns response to C which returns it to fetch_http which gives it back to fetch_path to put in data.
+
+Overriding in Ruby seems to just mean defining the same method again. When two methods share the same name, the latter one is used. So I just stick our fetch_http after the original, that way we can switch back and forth for testing if necessary.
+
+**FROM Nov. 9 Email: Nektarios**
+Regarding interposing the Ruby ‘fetch_http’ method that Pan was working on, I think we should use the decorator. Changing the function in place would definitely break stuff we don’t want. For the two options I posted earlier the second option (i.e. Decorator Module with ‘missing_method’ etc) is reentrant by changes the class of the object. This should not be a problem I guess due to duck typing. However, we can also use the first option (just expand the module); the first option cannot be reentrant however (I do not see that it is thought). So we can try both options, I guess it is all a matter of preference.

@@ -1,0 +1,5 @@
+VAR ASGN X 0
+PRINT VAR X
+VAR ASGN 1 1
+PRINT "Hello!  This is a test, of a stringt^ that$ % has Spec# al: ChaRACTERS/..!?"
+PRINT VAR 1

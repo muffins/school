@@ -1,0 +1,15 @@
+{
+  "configurations": {
+    "localhost:8080": {
+      "repository_directory": "/tmp/.gemtuf/client/",
+      "repository_mirrors" : {
+        "mirror1": {
+          "url_prefix": "http://mirror1.poly.edu/test-rubygems/",
+          "metadata_path": "metadata",
+          "targets_path": "targets",
+          "confined_target_dirs": [""]
+        }
+      }
+    }
+  }
+} 

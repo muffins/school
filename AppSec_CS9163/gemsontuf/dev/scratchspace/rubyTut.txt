@@ -1,0 +1,23 @@
+To use the C->Ruby module
+
+
+irb -I .
+require 'GemsOnTuf'
+tuf = GemsOnTuf::Tuf.new
+working = tuf.configure("configfile") #should return true unless there was an error
+working = tuf.urlOpen("http://url.com") #should also return true if there was no error
+
+
+
+
+I am not sure if it is necessary to make them return bool values but for now that's how it's setup once we start implementing
+I'll have a better idea of what would be more useful
+
+
+
+NOTE: Line 6 from above did not work as Tuf.new calls Tuf.initialize which calls Tuf.configure.
+The GemsOnTuf interface requires three arguments as such:
+Py_TUF_configure(char* tuf_intrp_json, char* p_repo_dir, char* p_ssl_cert_dir)
+
+Example:
+tuf = GemsOnTuf::TUF.new(filename="/path/to/tuf.interposition.json","./","./")

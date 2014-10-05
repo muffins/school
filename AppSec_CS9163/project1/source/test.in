@@ -1,0 +1,9 @@
+PRINT "!@#$%^&*()_+/><,.':;qwertyuiop[]\a\" exec("print 'This is not in the box!')"
+
+
+VAR ASGN X 0
+IF VAR X LT 10
+    WHILE VAR X LT 10
+        VAR ADD X 1
+    ENDWHILE
+ENDIF

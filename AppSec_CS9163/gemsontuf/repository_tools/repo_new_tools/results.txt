@@ -1,0 +1,5 @@
+Results
+BIN=2 	 SIZE=10 	 1.5M	/tmp/gemsontuf/repository/metadata
+BIN=3 	 SIZE=9 	 1.5M	/tmp/gemsontuf/repository/metadata
+BIN=4 	 SIZE=8 	 1.5M	/tmp/gemsontuf/repository/metadata
+BIN=5 	 SIZE=7 	 1.5M	/tmp/gemsontuf/repository/metadata
